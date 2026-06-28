@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WOW Principles · Reinis Neilands</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css?v=17" />
+  <link rel="stylesheet" href="../project.css" />
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Header -->
+  <header class="nav-wrap">
+    <nav class="nav">
+      <a href="https://reinisneilands.lv" class="nav__logo">
+        <img src="../assets/Logo.svg" alt="Reinis logo" width="28" height="28" />
+      </a>
+      <ul class="nav__links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#experience">Experience</a></li>
+      </ul>
+      <a href="https://www.linkedin.com/in/reinisneilands/" target="_blank" rel="noopener" class="nav__cta">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Project Hero -->
+  <section class="project-hero">
+    <div class="project-hero__top">
+      <div class="project-hero__titles">
+        <h1 class="project-hero__heading">My Design &amp; Handoff Principles</h1>
+        <p class="project-hero__subtitle">Design Ops</p>
+      </div>
+    </div>
+
+    <div class="project-hero__image">
+      <img src="Main Image.jpg" alt="WOW Design Principles" style="width:100%;height:100%;object-fit:cover;display:block;border-radius:24px;" />
+    </div>
+  </section>
+
+  <!-- Intro Statement -->
+  <section class="project-summary">
+    <h2 class="project-summary__question">
+      <span class="project-summary__question--muted">A beautiful UI is useless if it's a nightmare to build. Over the years, </span>I've developed a strict set of Design Ops principles <span class="project-summary__question--muted">to ensure that what looks good in Figma actually survives the translation to code.</span>
+    </h2>
+  </section>
+
+  <!-- WOW Content -->
+  <section class="case-study">
+
+    <div class="case-study__section" id="cs-01">
+      <div class="case-study__num">01</div>
+      <div class="case-study__body">
+        <div class="case-study__image-wrap">
+          <img src="01_architecture.jpg" alt="Architecture & Handoff" class="case-study__image" />
+        </div>
+        <h3 class="case-study__title">Architecture &amp; Handoff</h3>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">One File = One Feature</h4>
+          <p class="case-study__text">The days of Final_Final_v2_2026.fig are over. I strictly use branching for new feature work. The main file remains a pristine, single source of truth for the development team. Messy explorations, moodboards, and discarded UX flows live in a separate playground file. When a developer opens a handoff file, there should be zero guesswork.</p>
+        </div>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">Self-Documenting Flows</h4>
+          <p class="case-study__text">A Figma file should be readable without the designer in the room. I believe in exhaustive annotations, clear user journey mapping, and logical screen flows. If a developer needs to schedule a 30-minute call just to understand what connects to what, the handoff has failed.</p>
+        </div>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">Tokens Over Everything</h4>
+          <p class="case-study__text">Hardcoded hex codes are a crime. Absolutely everything must reference the design system. I rely entirely on semantic design tokens to manage Light/Dark modes, and I rigorously test typography using embedded accessibility scaling to ensure layouts don't break when a user increases their system font size.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study__section" id="cs-02">
+      <div class="case-study__num">02</div>
+      <div class="case-study__body">
+        <div class="case-study__image-wrap">
+          <img src="02_platform.jpg" alt="Platform & Execution" class="case-study__image" />
+        </div>
+        <h3 class="case-study__title">Platform &amp; Execution</h3>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">Native Components are King</h4>
+          <p class="case-study__text">While brand expression is important, muscle memory matters more. I heavily lean into native iOS and Android components. By respecting Human Interface Guidelines and Material Design, we make the platform feel inherently familiar to the user, reducing friction and speeding up development time.</p>
+        </div>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">All Screens Matter (Not Just "Mobile-First")</h4>
+          <p class="case-study__text">The industry loves the term "mobile-first," but I prefer "all screens matter." A design isn't finished until it works flawlessly on an iPhone SE, a massive 4k monitor, and everything in between. UI should adapt intelligently to the hardware it lives on, never feeling stretched or cramped.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study__section" id="cs-03">
+      <div class="case-study__num">03</div>
+      <div class="case-study__body">
+        <div class="case-study__image-wrap">
+          <img src="03_reality_check.jpg" alt="The Reality Check" class="case-study__image" />
+        </div>
+        <h3 class="case-study__title">The Reality Check</h3>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">The AI Prototyping Workflow</h4>
+          <p class="case-study__text">Click-through Figma prototypes often lie. To ground my designs in reality, I built a custom AI-driven workflow for mobile apps. I use Claude Code to generate Xcode playgrounds, with our brand components. This allows me to build and test high-fidelity, code-backed prototypes right on my physical test device. It's the only way to genuinely test complex haptics, native physics, and custom animations before handing them off to engineering.</p>
+        </div>
+
+        <div class="case-study__sub">
+          <h4 class="case-study__sub-title">The Two-Eyes Principle</h4>
+          <p class="case-study__text">Egos get checked at the door. Every piece of work must be reviewed by another designer before it ships. When you stare at a flow for 40 hours, you develop blind spots. A fresh pair of eyes catches the edge cases you missed.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="case-study__section" id="cs-04">
+      <div class="case-study__num">04</div>
+      <div class="case-study__body">
+        <h3 class="case-study__title">The Unhappy Path (Error States &amp; Loading)</h3>
+        <p class="case-study__text">We never just design for the perfect scenario. A complete handoff includes the loading skeletons, the empty states, the network errors, and the edge cases. Designing how the app fails gracefully is just as important as designing how it succeeds.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__card">
+      <div class="footer__brand">
+        <a href="https://reinisneilands.lv" class="footer__brand-top">
+          <img src="../assets/Logo.svg" alt="Logo" class="footer__logo" />
+          <span class="footer__name">REINIS NEILANDS DESIGN</span>
+        </a>
+        <p class="footer__tagline">Senior Design Specialist converting complex<br>logic into clean, profitable interfaces.</p>
+      </div>
+
+      <div class="footer__links-group">
+        <div class="footer__col">
+          <h4 class="footer__col-title">Designer's selected works</h4>
+          <ul class="footer__links">
+            <li><a href="../printful_opp/">Printful Open Product page</a></li>
+            <li><a href="../printful_dashboard/">Printful Mobile Dashboard</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">All work</h4>
+          <ul class="footer__links">
+            <li><a href="../seb_rebrand/">SEB Rebranding</a></li>
+            <li><a href="../usmas_meki/">Usmas Meķi E-commerce site</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__col-title">More</h4>
+          <ul class="footer__links">
+            <li><a href="../index.html#about">About the Designer</a></li>
+            <li><a href="../index.html#experience">Designer's experience</a></li>
+            <li><a href="https://www.linkedin.com/in/reinisneilands/" target="_blank" rel="noopener">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__divider"></div>
+
+      <div class="footer__bottom">
+        <span>Copyright © 2026 Reinis Neilands. All rights reserved.</span>
+        <span>With love, from Riga</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const bar = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const doc = document.documentElement;
+      const scrolled = doc.scrollTop / (doc.scrollHeight - doc.clientHeight);
+      bar.style.width = (scrolled * 100) + '%';
+    });
+  </script>
+
+  <nav class="bottom-nav">
+    <div class="bottom-nav__pill">
+      <a href="../" class="bottom-nav__item">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.8L11 2L19.5 9.8V20H14V14H8V20H2.5V9.8Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Home</span>
+      </a>
+      <a href="../index.html#projects" class="bottom-nav__item">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 3H17C17.5523 3 18 3.44772 18 4V20L11 16L4 20V4C4 3.44772 4.44772 3 5 3Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Projects</span>
+      </a>
+      <a href="../index.html#experience" class="bottom-nav__item">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="14" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M7.5 9.5L5 3H17L14.5 9.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Experience</span>
+      </a>
+    </div>
+    <a href="https://www.linkedin.com/in/reinisneilands/" target="_blank" rel="noopener" class="bottom-nav__contact">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="3" stroke="currentColor" stroke-width="1.5"/><path d="M14 11C14 12.6569 15.3431 14 17 14C17 14 18.5 12 18.5 11C18.5 6.30558 15.1944 3 11 3C6.30558 3 3 6.30558 3 11C3 15.6944 6.30558 19 11 19C13.2 19 15 18.2 16.5 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+      <span>Contact</span>
+    </a>
+  </nav>
+  <script src="../animations.js"></script>
+</body>
+</html>
